@@ -1,6 +1,5 @@
 package com.employemanagementsystem.serviceImpl;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
@@ -58,7 +57,7 @@ class DepartmentServiceImplTest {
         
         when(departmentRepository.findById(any())).thenReturn(Optional.of(department));
 
-        Optional<Department> emp = service.getDepartmentById(1);
+        Optional<Department> emp = Optional.ofNullable(service.getDepartmentById(1));
 
         assertNotNull(emp);
         

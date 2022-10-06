@@ -21,4 +21,7 @@ public interface EmployeeService {
 
     boolean deleteAllEmployee();
 
+  //  public boolean checkEmail(String email);
+
+
 }

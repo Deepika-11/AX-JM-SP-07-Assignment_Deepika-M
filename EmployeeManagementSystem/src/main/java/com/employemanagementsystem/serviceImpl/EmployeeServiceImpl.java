@@ -74,5 +74,12 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
         return false;
     }
+
+ //   @Override
+  //  public boolean checkEmail(String email) {
+
+  //      return employeeRepo.existsByEmail(email);
+  //  }
+
 }
 
